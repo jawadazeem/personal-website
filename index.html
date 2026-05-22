@@ -1,293 +1,497 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jawad Azeem</title>
-  <meta name="description" content="Jawad Azeem — Computer Science student focusing on Cloud (AWS), Full-Stack Web, and AI projects." />
-  <meta name="keywords" content="Jawad Azeem, Computer Science, AWS, Cloud, Web Development, AI, Portfolio, Full Stack" />
+  <title>Jawad Azeem — Software Engineer</title>
+  <meta name="description" content="Jawad Azeem — Software Engineer building reliable systems on AWS. Cloud, backend, and distributed systems." />
   <meta name="author" content="Jawad Azeem" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32" />
-    <link rel="apple-touch-icon" href="images/favicon.png" />
-    <meta name="theme-color" content="#0b0f14" />
+  <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
+  <meta name="theme-color" content="#f7f5f2" />
 
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Jawad Azeem — Portfolio" />
-  <meta property="og:description" content="Cloud, Web, and AI projects, certifications, and contact." />
+  <meta property="og:title" content="Jawad Azeem — Software Engineer" />
+  <meta property="og:description" content="Building reliable systems on AWS. Cloud, backend, and distributed architectures." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://azeem.com" />
-  <meta property="og:image" content="/assets/certs/linkedin-cert-1.png" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Jawad Azeem — Portfolio" />
-  <meta name="twitter:description" content="Cloud, Web, and AI projects, certifications, and contact." />
-  <meta name="twitter:image" content="/assets/certs/linkedin-cert-1.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.google.com/specimen/Space+Grotesk" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">JA</a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
   <main>
-    <!-- Home / Hero -->
-    <section id="home" class="section hero hero-centered">
-      <div class="hero-name-card" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
-        <h1>Jawad Azeem</h1>
-        <p class="eyebrow">Software Engineer</p>
 
-        <div class="cta-row">
-          <a class="btn ghost" href="#about">About</a>
-          <a class="btn ghost" href="#experience">Experience</a>
-          <a class="btn ghost" href="#projects">Projects</a>
-          <a class="btn ghost" href="#contact">Contact</a>
+    <!-- ==================== HERO ==================== -->
+    <section id="hero" class="hero">
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Open to opportunities
         </div>
+        <h1 class="hero-name">Jawad Azeem</h1>
+        <div class="hero-title-wrap">
+          <span id="typed-title" class="hero-title"></span><span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-bio">
+          I build and deploy reliable, scalable systems on AWS.<br>
+          Backend services, cloud infrastructure, and distributed architectures.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            View my work
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-outline">Get in touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/jawadazeem" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/jawad-azeem-5b40b625b/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:jawad.azeem@outlook.com" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
       </div>
     </section>
 
-    <!-- About -->
+    <!-- ==================== ABOUT ==================== -->
     <section id="about" class="section">
-      <div class="container grid-2">
-        <div>
-          <h2>About Me</h2>
-          <p>
-            I’m Jawad Azeem, a software engineer who builds and deploys reliable systems on AWS. 
-            I work on modern web applications and cloud services that improve real-world workflows.
-          </p>
-  
-          <div class="skills-grid">
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="0"><h4>Cloud</h4>
-              <p>
-                Design and deploy scalable, distributed, and data-intensive, software services in the cloud using serverless and containerized architectures.
-              </p>
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-label">01 — About</span>
+          <h2>Building reliable software<br>for real-world systems</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text" data-animate="fade-up" data-delay="100">
+            <p>
+              I'm a Computer Science student at Virginia Tech with a focus on backend engineering,
+              cloud infrastructure, and distributed systems. I care about writing software that's
+              reliable, observable, and built to scale.
+            </p>
+            <p>
+              My work spans from designing Spring Boot services deployed on AWS to building
+              event-driven architectures that handle high-concurrency workloads. I'm drawn to
+              hard problems, the kind where you need to think carefully about state, failure
+              modes, and system boundaries.
+            </p>
+
+            <div class="about-cards">
+              <div class="about-card" data-animate="fade-up" data-delay="200">
+                <div class="about-card-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 6 3 6 3s3 0 6-3v-5"/></svg>
+                </div>
+                <h4>Education</h4>
+                <p><strong>Virginia Tech</strong></p>
+                <p class="muted">B.S. Computer Science, 2028</p>
+              </div>
+              <div class="about-card" data-animate="fade-up" data-delay="300">
+                <div class="about-card-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                </div>
+                <h4>Certifications</h4>
+                <p>AWS Solutions Architect</p>
+                <p class="muted">AWS Developer (Associate)</p>
+              </div>
             </div>
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="200"><h4>CI/CD</h4><p>Automate builds and deployments with CI/CD pipelines to reduce manual risk and improve release confidence.</p></div>
-            <div class="skill-card-wide" data-aos="fade-up" data-aos-delay="300"><h4>Software Development</h4>
-              <p>
-                Experience building backend services and web applications with Java Spring Boot, integrating LLMs 
-                via APIs, and implementing event-driven architectures for high-concurrency workloads.
-              </p>
+          </div>
+
+          <div class="code-window" data-animate="fade-up" data-delay="200">
+            <div class="code-header">
+              <div class="code-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="code-filename">Jawad.java</span>
             </div>
+            <pre class="code-body"><code><span class="hl-keyword">public class</span> <span class="hl-var" id="class-name">Java</span> {
+
+  <span class="hl-keyword">String</span> <span class="hl-key">name</span> = <span class="hl-string">"Jawad Azeem"</span>;
+  <span class="hl-keyword">String</span> <span class="hl-key">location</span> = <span class="hl-string">"Virginia, US"</span>;
+  <span class="hl-keyword">String</span> <span class="hl-key">education</span> = <span class="hl-string">"Virginia Tech — CS '28"</span>;
+
+  <span class="hl-keyword">String[]</span> <span class="hl-key">focus</span> = {
+    <span class="hl-string">"Cloud Infrastructure"</span>,
+    <span class="hl-string">"Backend Systems"</span>,
+    <span class="hl-string">"Distributed Architecture"</span>
+  };
+
+  <span class="hl-keyword">String[]</span> <span class="hl-key">stack</span> = {
+    <span class="hl-string">"Java"</span>, <span class="hl-string">"Spring Boot"</span>,
+    <span class="hl-string">"AWS"</span>, <span class="hl-string">"Docker"</span>,
+    <span class="hl-string">"JS"</span>, <span class="hl-string">"TS"</span>
+  };
+
+  <span class="hl-keyword">String</span> <span class="hl-key">status</span> = <span class="hl-string">"Building something cool"</span>;
+}</code></pre>
           </div>
         </div>
-        <aside class="about-aside">
-          <div class="about-card">
-            <h3>Education</h3>
-            <p><strong>Virginia Tech</strong> — <em>B.S. in Computer Science, 2028</em></p>
-          </div>
-          <div class="about-card">
-          <h3>Engineering Signals</h3>
-          <ul class="cert-list">
-            <li>Designs and deploys Spring services on AWS</li>
-            <li>Implements CI/CD pipelines for automated deployments</li>
-            <li>AWS Certified Solutions Architect & Developer (Associate)</li>
-          </ul>
+      </div>
     </section>
 
-    <!-- Experience -->
-    <section id="experience" class="section alt">
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section id="experience" class="section section-alt">
       <div class="container">
-        <h2>Experience</h2>
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-label">02 — Experience</span>
+          <h2>Where I've worked</h2>
+        </div>
 
-        <div class="experience-card" data-aos="fade-up">
-          <div class="experience-layout">
-
-            <!-- Left selector -->
-            <ul class="experience-list">
-              <li class="active" data-exp="gdms">General Dynamics</li>
-              <li data-exp="cosmiclens">CosmicLens</li>
-              <!-- future -->
-              <!-- <li data-exp="amazon">Amazon</li> -->
-            </ul>
-
-            <!-- Right content -->
-            <div class="experience-content">
-
-              <div class="experience-panel active" id="gdms">
-                <h3>Systems Engineering Intern</h3>
-                <p class="company">General Dynamics Mission Systems</p>
-                <span class="dates">May 2026 – Present</span>
-
-                <ul>
-                  <li>Incoming.</li>
-                </ul>
+        <div class="timeline">
+          <div class="timeline-item" data-animate="fade-up" data-delay="100">
+            <div class="timeline-marker">
+              <div class="timeline-dot active-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>Software Systems Engineer</h3>
+                  <p class="timeline-company">General Dynamics Mission Systems</p>
+                </div>
+                <span class="timeline-date">May 2026 — Present</span>
               </div>
-
-              <div class="experience-panel" id="cosmiclens">
-                <h3>Software Engineering Intern</h3>
-                <p class="company">CosmicLens, Inc</p>
-                <span class="dates">May 2025 – Aug 2025</span>
-
-                <ul>
-                  <li>Built and deployed Spring Boot services on AWS.</li>
-                  <li>Modernized ETL pipelines and centralized logging.</li>
-                  <li>Integrated a serverless chatbot for customer support.</li>
-                </ul>
+              <ul class="timeline-points">
+                <li>Contributing to mission-critical submarine payload control software efforts in a secure defense environment.</li>
+                <li>
+                  Built simulation applications for naval operators.
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Secure Software</span>
+                <span>Systems Engineering</span>
+                <span>TypeScript</span>
               </div>
+            </div>
+          </div>
 
-              <!-- future panels go here -->
-
+          <div class="timeline-item" data-animate="fade-up" data-delay="200">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>Software Engineering Intern</h3>
+                  <p class="timeline-company">CosmicLens, Inc</p>
+                </div>
+                <span class="timeline-date">May 2025 — Aug 2025</span>
+              </div>
+              <ul class="timeline-points">
+                <li>Built and deployed Spring Boot services on AWS with production-grade CI/CD pipelines.</li>
+                <li>Modernized ETL pipelines and centralized logging for improved observability.</li>
+                <li>Integrated a serverless chatbot for automated customer support workflows.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Spring Boot</span>
+                <span>AWS</span>
+                <span>ETL</span>
+                <span>Serverless</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-        
-        </div>
-    </section>
 
-    <!-- Projects -->
+    <!-- ==================== PROJECTS ==================== -->
     <section id="projects" class="section">
       <div class="container">
-        <h2>Projects</h2>
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-label">03 — Projects</span>
+          <h2>Things I've built</h2>
+        </div>
 
         <div class="projects-grid">
 
-          <article class="project-card" data-aos="fade-right" data-aos-delay="0"> 
-            <div class="project-head">
-              <h3>Blueprint</h3>
-
-              <span class="badge">RAG</span>
-            </div>
-            <p>
-            A high-performance, cloud-native backend built with Spring Boot. It functions as an end-to-end ETL 
-              pipeline that integrates Generative AI via a Retrieval-Augmented Generation (RAG) architecture to 
-              provide intelligent, data-grounded insights from large-scale datasets.
-            </p>
-            <ul class="tags">
-              <li>Java Spring Boot</li><li>Google GenAI</li><li>AWS</li><li>Docker</li><li>CI/CD</li>
-            </ul>
-            <div class="project-actions">
-              <button class="project-link-btn" onclick="window.open('https://blueprint.jawadazeem.com', '_blank')">
-                View API
-              </button>
-            </div>
-          </article>
-
-          <article class="project-card" data-aos="fade-up" data-aos-delay="0"> 
-            <div class="project-head">
-              <h3>Resonance</h3>
-              <span class="badge">Backend, Cloud, LLM Integration</span>
-            </div>
-            <p>
-              A high-concurrency backend engine that models business workflows as strict state machines 
-              and executes them through a queue-based processing core, like SQS, but with built-in rules, 
-              retries, recovery, and full traceability.
-            </p>
-            <ul class="tags">
-              <li>Gemini API</li><li>Java Spring Boot</li><li>AWS</li>
-            </ul>
-            <div class="project-actions">
-              <button class="project-link-btn" onclick="window.open('https://jawadazeem.com/resonance/index.html', '_blank')">
-                View Documentation
-              </button>
+          <article class="project-card featured" data-animate="fade-up" data-delay="100" data-tilt>
+            <div class="project-badge">Featured</div>
+            <div class="project-content">
+              <div class="project-top">
+                <h3>Blueprint</h3>
+                <span class="project-type">RAG Pipeline</span>
+              </div>
+              <p>
+                A high-performance, cloud-native backend built with Spring Boot. Functions as an
+                end-to-end ETL pipeline integrating Generative AI via a Retrieval-Augmented
+                Generation architecture to provide intelligent, data-grounded insights from
+                large-scale datasets.
+              </p>
+              <ul class="project-tags">
+                <li>Java Spring Boot</li>
+                <li>Google GenAI</li>
+                <li>AWS</li>
+                <li>Docker</li>
+                <li>CI/CD</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://blueprint.jawadazeem.com" target="_blank" rel="noopener" class="project-link">
+                  View API
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
             </div>
           </article>
 
-          <article class="project-card" data-aos="fade-left" data-aos-delay="0"> 
-            <div class="project-head">
-              <h3>Avisos</h3>
-              <span class="badge">SCADA</span>
-            </div>
-            <p>
-              An industrial-grade orchestration platform designed to secure and manage high-reliability 
-              SCADA environments. Built on a custom-engineered backbone, it integrates computer vision AI for 
-              predictive threat modeling with a hardened command-bus to ensure the integrity of critical 
-              infrastructure operations.
-            </p>
-            <ul class="tags">
-              <li>Java</li><li>AWS</li><li>Docker</li><li>Event Driven Architecture</li>
-            </ul>
-            <div class="project-actions">
-              <button class="project-link-btn" onclick="window.open('https://jawadazeem.com/sentinel/index.html', '_blank')">
-                View Documentation
-              </button>
-              <!-- <button class="project-link-btn" onclick="window.open('https://github.com/jawadazeem', '_blank')">
-                GitHub Profile
-              </button> -->
+          <article class="project-card" data-animate="fade-up" data-delay="200" data-tilt>
+            <div class="project-content">
+              <div class="project-top">
+                <h3>Resonance</h3>
+                <span class="project-type">Backend Engine</span>
+              </div>
+              <p>
+                A high-concurrency backend engine that models business workflows as strict
+                state machines and executes them through a queue-based processing core —
+                with built-in rules, retries, recovery, and full traceability.
+              </p>
+              <ul class="project-tags">
+                <li>Gemini API</li>
+                <li>Java Spring Boot</li>
+                <li>AWS</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://jawadazeem.com/resonance/index.html" target="_blank" rel="noopener" class="project-link">
+                  Documentation
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
             </div>
           </article>
+
+          <article class="project-card" data-animate="fade-up" data-delay="300" data-tilt>
+            <div class="project-content">
+              <div class="project-top">
+                <h3>Avisos</h3>
+                <span class="project-type">SCADA Platform</span>
+              </div>
+              <p>
+                An industrial-grade orchestration platform for securing and managing
+                high-reliability SCADA environments. Integrates computer vision AI for
+                predictive threat modeling with a hardened command-bus for critical
+                infrastructure operations.
+              </p>
+              <ul class="project-tags">
+                <li>Java</li>
+                <li>AWS</li>
+                <li>Docker</li>
+                <li>Event Driven</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://jawadazeem.com/sentinel/index.html" target="_blank" rel="noopener" class="project-link">
+                  Documentation
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <!-- AskJawad -->
-    <section id="askjawad" class="section alt">
+    <!-- ==================== TECH STACK MARQUEE ==================== -->
+    <div class="marquee-section" data-animate="fade-up">
+      <div class="marquee">
+        <div class="marquee-track">
+          <span class="tech-pill">Java</span>
+          <span class="tech-pill">Spring Boot</span>
+          <span class="tech-pill">AWS</span>
+          <span class="tech-pill">Docker</span>
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">JavaScript</span>
+          <span class="tech-pill">Node.js</span>
+          <span class="tech-pill">PostgreSQL</span>
+          <span class="tech-pill">REST APIs</span>
+          <span class="tech-pill">Terraform</span>
+          <span class="tech-pill">CI/CD</span>
+          <span class="tech-pill">Linux</span>
+          <!-- Duplicate for seamless loop -->
+          <span class="tech-pill">Java</span>
+          <span class="tech-pill">Spring Boot</span>
+          <span class="tech-pill">AWS</span>
+          <span class="tech-pill">Docker</span>
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">JavaScript</span>
+          <span class="tech-pill">Node.js</span>
+          <span class="tech-pill">PostgreSQL</span>
+          <span class="tech-pill">REST APIs</span>
+          <span class="tech-pill">Terraform</span>
+          <span class="tech-pill">CI/CD</span>
+          <span class="tech-pill">Linux</span>
+        </div>
+      </div>
+      <div class="marquee marquee-reverse">
+        <div class="marquee-track">
+          <span class="tech-pill">Redis</span>
+          <span class="tech-pill">gRPC</span>
+          <span class="tech-pill">Event-Driven</span>
+          <span class="tech-pill">Git</span>
+          <span class="tech-pill">React</span>
+          <span class="tech-pill">Microservices</span>
+          <span class="tech-pill">SQS</span>
+          <span class="tech-pill">Lambda</span>
+          <span class="tech-pill">DynamoDB</span>
+          <span class="tech-pill">CloudFormation</span>
+          <span class="tech-pill">S3</span>
+          <span class="tech-pill">Kubernetes</span>
+          <!-- Duplicate for seamless loop -->
+          <span class="tech-pill">Redis</span>
+          <span class="tech-pill">gRPC</span>
+          <span class="tech-pill">Event-Driven</span>
+          <span class="tech-pill">Git</span>
+          <span class="tech-pill">React</span>
+          <span class="tech-pill">Microservices</span>
+          <span class="tech-pill">SQS</span>
+          <span class="tech-pill">Lambda</span>
+          <span class="tech-pill">DynamoDB</span>
+          <span class="tech-pill">CloudFormation</span>
+          <span class="tech-pill">S3</span>
+          <span class="tech-pill">Kubernetes</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ==================== ASK JAWAD ==================== -->
+    <section id="askjawad" class="section">
       <div class="container">
-        <h2>AskJawad</h2>
-        <p class="muted">
-          Ask questions about my background, projects, and approach to backend engineering.
-        </p>
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-label">04 — AI</span>
+          <h2>AskJawad</h2>
+          <p class="section-desc">Ask questions about my background, projects, and engineering approach.</p>
+        </div>
 
-        <div class="askjawad-card">
-          <textarea
-            id="ask-input"
-            rows="4"
-            placeholder="Ready when you are."
-          ></textarea>
-
-          <div class="ask-actions">
-            <button class="btn primary" id="ask-btn"> ➤ </button>
-            <span class="ask-status muted" id="ask-status" style="margin-left: 15px; min-height: 40px;"></span>
+        <div class="ask-card" data-animate="fade-up" data-delay="100">
+          <div class="ask-input-wrap">
+            <textarea id="ask-input" rows="3" placeholder="What would you like to know?"></textarea>
+            <button class="ask-send" id="ask-btn" aria-label="Send">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
           </div>
+          <div class="ask-status" id="ask-status"></div>
           <div class="ask-response" id="ask-response"></div>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section alt">
-      <div class="container"  data-aos="fade-up" data-aos-delay="0">
-        <h2>Contact</h2>
-        <p>Interested in working together or have a question? Send a message.</p>
-        <form action="https://formspree.io/f/xvgwwjyw" method="POST" class="contact-form">
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-label">05 — Contact</span>
+          <h2>Let's connect</h2>
+          <p class="section-desc">Interested in working together? Send a message and I'll get back to you.</p>
+        </div>
+
+        <form action="https://formspree.io/f/xvgwwjyw" method="POST" class="contact-form" data-animate="fade-up" data-delay="100">
           <input type="hidden" name="form-name" value="contact" />
-          <div class="form-grid">
-            <label> Name
-              <input required type="text" name="name" placeholder="Your name" />
-            </label>
-            <label> Email
-              <input required type="email" name="email" placeholder="you@domain.com" />
-            </label>
-            <label class="full"> Message
-              <textarea required name="message" rows="5" placeholder="What would you like to build?"></textarea>
-            </label>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input required type="text" id="contact-name" name="name" placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input required type="email" id="contact-email" name="email" placeholder="you@domain.com" />
+            </div>
           </div>
-          <button class="btn primary" type="submit">➤</button>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea required id="contact-message" name="message" rows="5" placeholder="What's on your mind?"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">
+            Send message
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
         </form>
       </div>
     </section>
+
   </main>
 
+  <!-- ==================== FOOTER ==================== -->
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <p>© 2026 Jawad Azeem</p>
-      <div class="socials">
-        <a href="https://github.com/jawadazeem" target="_blank" aria-label="GitHub">GitHub</a>
-        <a href="https://www.linkedin.com/in/jawad-azeem-5b40b625b/" target="_blank" aria-label="LinkedIn">LinkedIn</a>
-        <a href="mailto:jawad.azeem@outlook.com" aria-label="Email">Email</a>
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">JA</span>
+        <p class="footer-copy">&copy; 2026 Jawad Azeem. Built with care.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/jawadazeem" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/jawad-azeem-5b40b625b/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:jawad.azeem@outlook.com">Email</a>
       </div>
     </div>
   </footer>
-  
+
+  <!-- Floating Music Player -->
+  <div class="music-float" id="music-float">
+    <div class="music-panel" id="music-panel">
+      <div class="music-panel-head">
+        <span>Now Playing</span>
+        <button class="music-panel-close" id="music-panel-close" aria-label="Close">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="drop-zone" id="drop-zone">
+        <svg class="drop-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        <p class="drop-text">Drop a track here</p>
+        <span class="drop-hint">or click to browse</span>
+        <input type="file" id="audio-file-input" accept="audio/*" hidden />
+      </div>
+      <div class="player-ui" id="player-ui">
+        <canvas id="visualizer"></canvas>
+        <div class="player-info">
+          <span class="song-name" id="song-name">No track</span>
+        </div>
+        <div class="player-progress">
+          <span class="time" id="time-current">0:00</span>
+          <div class="progress-bar" id="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <span class="time" id="time-total">0:00</span>
+        </div>
+        <div class="player-controls">
+          <button class="ctrl-btn" id="play-btn" aria-label="Play/Pause">
+            <svg id="icon-play" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            <svg id="icon-pause" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <button class="music-fab" id="music-fab" aria-label="Music player">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+    </button>
+  </div>
+
   <script src="scripts.js"></script>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800, // global duration for all animations
-      once: true,    // elements animate only once on scroll down
-      offset: 50     // trigger animations 50px before element enters viewport
-    });
-  </script>
-
 </body>
 </html>
