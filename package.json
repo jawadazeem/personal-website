@@ -1,0 +1,14 @@
+{
+  "name": "jawad-portfolio-main",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "This repository contains the source code and content for Jawad Azeem’s professional website. The site showcases my background, skills, and projects, serving as a central hub for my online presence.",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Jawad Azeem",
+  "license": "APACHE LICENSE, VERSION 2.0"
+}
