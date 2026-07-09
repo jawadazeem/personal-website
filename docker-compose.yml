@@ -7,7 +7,7 @@ services:
     volumes:
       - ollama_data:/root/.ollama
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+      test: ["CMD-SHELL", "ollama list || exit 1"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -31,7 +31,7 @@ services:
       - "3000:3000"
     environment:
       - PORT=3000
-      - OLLAMA_URL=http://ollama:11439
+      - OLLAMA_URL=http://ollama:11434
       - OLLAMA_MODEL=tinyllama
     depends_on:
       ollama-init:
