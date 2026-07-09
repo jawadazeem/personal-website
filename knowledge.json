@@ -1,0 +1,57 @@
+[
+  {
+    "id": "bio",
+    "topic": "about jawad overview",
+    "content": "Jawad Azeem is a Computer Science student at Virginia Tech (B.S. CS, graduating 2028) focused on backend engineering, cloud infrastructure, and distributed systems. He builds and deploys reliable, scalable systems on AWS — backend services, cloud infrastructure, and distributed architectures. He cares about writing software that's reliable, observable, and built to scale."
+  },
+  {
+    "id": "focus",
+    "topic": "engineering focus and interests",
+    "content": "Jawad's work spans from designing Spring Boot services deployed on AWS to building event-driven architectures that handle high-concurrency workloads. He is drawn to hard problems — the kind where you need to think carefully about state, failure modes, and system boundaries. His areas of focus include Cloud Infrastructure, Backend Systems, and Distributed Architecture."
+  },
+  {
+    "id": "stack",
+    "topic": "tech stack and skills",
+    "content": "Jawad's tech stack includes Java, Spring Boot, AWS, Docker, JavaScript, TypeScript, C++, Python, Node.js, PostgreSQL, REST APIs, Terraform, CI/CD, Linux, Redis, gRPC, Event-Driven architectures, Git, React, Microservices, SQS, Lambda, DynamoDB, CloudFormation, S3, Kubernetes, Scikit-Learn, Pandas, and NumPy."
+  },
+  {
+    "id": "certifications",
+    "topic": "certifications",
+    "content": "Jawad holds two AWS certifications: AWS Solutions Architect Associate and AWS Developer Associate."
+  },
+  {
+    "id": "education",
+    "topic": "education",
+    "content": "Jawad is studying Computer Science at Virginia Tech, pursuing a B.S. degree with an expected graduation in 2028. He is located in Virginia, US."
+  },
+  {
+    "id": "gdms",
+    "topic": "general dynamics mission systems work experience",
+    "content": "Jawad is currently a Software Systems Engineer Intern at General Dynamics Mission Systems (May 2026 — Present). He contributes to mission-critical submarine payload control software efforts in a secure defense environment. He owns the modernization of UAV applications — containerizing legacy systems and rewriting old codebases to modern frameworks. He also builds new UUV (Unmanned Underwater Vehicle) applications using Java/Spring framework and TypeScript. His tech stack at GDMS includes Java/Spring, C++, and TypeScript."
+  },
+  {
+    "id": "cosmiclens",
+    "topic": "cosmiclens internship work experience",
+    "content": "Jawad was a Software Engineering Intern at CosmicLens, Inc (May 2025 — Aug 2025). He built and deployed Spring Boot services on AWS with production-grade CI/CD pipelines. He modernized ETL pipelines and centralized logging for improved observability. He integrated a serverless RAG-powered chatbot for automated customer support workflows. His tech stack included Spring Boot, AWS, ETL, and Serverless technologies."
+  },
+  {
+    "id": "avisos",
+    "topic": "avisos project",
+    "content": "Avisos is a real-time IoT monitoring platform powered by Computer Vision AI, Generative AI, and Retrieval-Augmented Generation (RAG). It delivers intelligent insights and descriptive information about events as they happen. Built on a real IoT device, the system fuses sensor data with AI-driven analysis for actionable, real-time situational awareness. The tech stack includes Java Spring, C++, TypeScript/JS, Python (with Scikit-Learn, Pandas, NumPy), AWS, and Docker. API available at avisos.jawadazeem.com."
+  },
+  {
+    "id": "blueprint",
+    "topic": "blueprint project",
+    "content": "Blueprint is a FinOps platform for cloud cost analysis using Generative AI. It directly ingests billing and usage data from GCP, Azure, and AWS, then applies RAG-driven intelligence to surface cost optimization recommendations and actionable spending insights. The tech stack includes Java Spring Boot, Google GenAI, AWS, GCP, Azure, Docker, and CI/CD. API available at blueprint.jawadazeem.com."
+  },
+  {
+    "id": "resonance",
+    "topic": "resonance project",
+    "content": "Resonance is a high-concurrency backend engine that models business workflows as strict state machines and executes them through a queue-based processing core — with built-in rules, retries, recovery, and full traceability. The tech stack includes AWS SQS, Java Spring Boot, and AWS."
+  },
+  {
+    "id": "contact",
+    "topic": "contact information",
+    "content": "You can reach Jawad via email at jawad.azeem@outlook.com, on GitHub at github.com/jawadazeem, or on LinkedIn at linkedin.com/in/jawad-azeem-5b40b625b/."
+  }
+]
