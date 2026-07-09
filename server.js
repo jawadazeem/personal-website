@@ -12,7 +12,7 @@ const __dirname = dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const OLLAMA_URL = process.env.OLLAMA_URL || "http://localhost:11434";
+const OLLAMA_URL = process.env.OLLAMA_URL || "http://localhost:11439";
 const OLLAMA_MODEL = process.env.OLLAMA_MODEL || "tinyllama";
 
 app.use(cors());
