@@ -1,0 +1,25 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: askjawad-ollama
+    ports:
+      - "11439:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    entrypoint: ["/bin/sh", "-c", "ollama serve & sleep 10 && ollama pull tinyllama && wait"]
+
+  web:
+    build: .
+    container_name: askjawad-web
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - OLLAMA_URL=http://ollama:11434
+      - OLLAMA_MODEL=tinyllama
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
+volumes:
+  ollama_data:
